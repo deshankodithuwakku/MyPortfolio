@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Enables static HTML export
-  basePath: process.env.NODE_ENV === 'production' ? '/MyPortfolio' : '',
+  output: 'export',
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
-  // This ensures GitHub Pages can find assets with correct paths
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/MyPortfolio' : '',
+  // Update this to your GitHub repository name
+  basePath: process.env.NODE_ENV === 'production' ? '/MyPortfolio' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/MyPortfolio/' : '',
 }
 
 module.exports = nextConfig
