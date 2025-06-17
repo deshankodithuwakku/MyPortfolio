@@ -16,7 +16,7 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCa
 							<div className="container py-3 px-4">
 								<Link className="navbar-brand d-flex main-logo align-items-center" href="/index-2">
 									<img src="assets/imgs/home-page-2/template/favicon.svg" alt="zelio" />
-									<span className="fs-4 ms-2">James.dev</span>
+									<span className="fs-4 ms-2">Deshan Kodithuwakku</span>
 								</Link>
 								<div className="d-none d-lg-flex">
 									<div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,10 +50,10 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCa
 										<Link href="/http://twitter.com">
 											<i className="ri-twitter-x-fill fs-18" />
 										</Link>
-										<Link href="/http://linkedin.com">
+										<Link href="/https://www.linkedin.com/in/deshankodithuwakku/">
 											<i className="ri-linkedin-fill fs-18" />
 										</Link>
-										<Link href="/http://github.com">
+										<Link href="/https://github.com/deshankodithuwakku">
 											<i className="ri-github-fill fs-18" />
 										</Link>
 									</div>

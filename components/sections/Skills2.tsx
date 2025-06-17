@@ -102,31 +102,31 @@ export default function Skills2() {
 															<li className="mb-3">
 																<div className="d-flex flex-column flex-md-row gap-2">
 																	<p className="text-dark text-nowrap mb-0">Front-End:</p>
-																	<span className="text-300">HTML, CSS, JavaScript, React, Angular</span>
+																	<span className="text-300">HTML, CSS, JavaScript, React</span>
 																</div>
 															</li>
 															<li className="mb-3">
 																<div className="d-flex flex-column flex-md-row gap-2">
 																	<p className="text-dark text-nowrap mb-0">Back-End:</p>
-																	<span className="text-300">Node.js, Express, Python, Django</span>
+																	<span className="text-300">Node.js, Express, Larval , Codeigniter</span>
 																</div>
 															</li>
 															<li className="mb-3">
 																<div className="d-flex flex-column flex-md-row gap-2">
 																	<p className="text-dark text-nowrap mb-0">Databases:</p>
-																	<span className="text-300">MySQL, PostgreSQL, MongoDB</span>
+																	<span className="text-300">MySQL, MongoDB</span>
 																</div>
 															</li>
 															<li className="mb-3">
 																<div className="d-flex flex-column flex-md-row gap-2">
 																	<p className="text-dark text-nowrap mb-0">Tools &amp; Platforms:</p>
-																	<span className="text-300">Git, Docker, AWS, Heroku</span>
+																	<span className="text-300">Git</span>
 																</div>
 															</li>
 															<li className="mb-3">
 																<div className="d-flex flex-column flex-md-row gap-2">
 																	<p className="text-dark text-nowrap mb-0">Others:</p>
-																	<span className="text-300">RESTful APIs, GraphQL, Agile Methodologies</span>
+																	<span className="text-300">RESTful APIs, Agile Methodologies</span>
 																</div>
 															</li>
 														</ul>

@@ -16,7 +16,7 @@ export default function HomePage2() {
 			<Layout headerStyle={2} footerStyle={2}>
 				<Home2 />
 				<Static2 />
-				<Coporation2 />
+				{/* <Coporation2 /> */}
 				<Service2 />
 				<Experience2 />
 				<Education2 />
