@@ -22,9 +22,8 @@ This guide will help you configure GitHub Pages as the publishing source for you
    - Go to your repository on GitHub
    - Click on **Settings** tab
    - Scroll down to **Pages** section in the left sidebar
-   - Under **Source**, select **Deploy from a branch**
-   - Choose **gh-pages** branch and **/ (root)** folder
-   - Click **Save**
+   - Under **Source**, select **GitHub Actions**
+   - The workflow will automatically handle the deployment
 
 3. **The GitHub Action will automatically**:
    - Trigger on every push to the `main` branch
@@ -60,9 +59,10 @@ If you prefer manual deployment:
 - `basePath` - Uncomment and set if your repo name differs from your domain
 
 ### `.github/workflows/deploy.yml`
-- Automated deployment workflow
-- Builds the app and deploys to `gh-pages` branch
+- Automated deployment workflow using GitHub Pages Actions
+- Builds the app and deploys directly to GitHub Pages
 - Triggered on pushes to `main` branch
+- Uses the newer GitHub Pages deployment method
 
 ### `public/.nojekyll`
 - Tells GitHub Pages not to use Jekyll processing
