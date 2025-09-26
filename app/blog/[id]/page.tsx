@@ -1,8 +1,5 @@
-'use client'
 import Layout from "@/components/layout/Layout"
 import data from "@/util/blog.json"
-import { useParams } from "next/navigation"
-import { useEffect, useState } from "react"
 
 interface Post {
     id: number
@@ -13,26 +10,28 @@ interface Post {
     date: string
 }
 
-export default function BlogDetails() {
-    let Router = useParams()
-    const [blogPost, setBlogPost] = useState<Post | null>(null)
-    const id = Router?.id
+// Generate static params for all blog posts
+export async function generateStaticParams() {
+    return data.map((post: Post) => ({
+        id: post.id.toString(),
+    }))
+}
 
-    useEffect(() => {
-        if (id) {
-            const post = data?.find((post: Post) => String(post.id) === String(id))
-            setBlogPost(post || null)
-        }
-    }, [id])
+export default function BlogDetails({ params }: { params: { id: string } }) {
+    const blogPost = data.find((post: Post) => String(post.id) === params.id)
+
+    if (!blogPost) {
+        return (
+            <Layout>
+                <div>Blog post not found</div>
+            </Layout>
+        )
+    }
 
     return (
         <>
             <Layout>
-                {blogPost && (
-                    <>
-                        {blogPost.title}
-                    </>
-                )}
+                {blogPost.title}
             </Layout>
         </>
     )
