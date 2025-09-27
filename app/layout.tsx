@@ -5,6 +5,7 @@ import "../public/assets/css/vendors/carouselTicker.css"
 import "../public/assets/css/vendors/magnific-popup.css"
 import "../public/assets/fonts/remixicon/remixicon.css"
 import "../public/assets/css/main.css"
+import { ThemeScript } from "./theme-script"
 
 import type { Metadata } from "next"
 import { Urbanist, Playfair_Display, DM_Mono } from "next/font/google"
@@ -39,7 +40,11 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="en" data-bs-theme="dark">
+		<html lang="en">
+			<head>
+				<meta name="color-scheme" content="dark light" />
+				<ThemeScript />
+			</head>
 			<body className={`${urbanist.variable} ${playfair_display.variable} ${dmMono.variable}`}>{children}</body>
 		</html>
 	)

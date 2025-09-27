@@ -105,3 +105,38 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Prevent flash of unstyled content */
+html {
+  visibility: hidden;
+}
+
+html[data-bs-theme] {
+  visibility: visible !important;
+}
+
+/* Ensure smooth theme transitions */
+html, body, 
+.text-primary, .text-secondary, .text-dark, .text-light,
+.bg-primary, .bg-secondary, .bg-dark, .bg-light {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/* Override any transition delays on initial load */
+html[data-bs-theme] * {
+  transition-delay: 0ms;
+}
+
+/* Additional fix for GitHub Pages - force immediate dark theme styles */
+html[data-bs-theme="dark"] .text-dark {
+  color: #ffffff !important;
+}
+
+html[data-bs-theme="light"] .text-dark {
+  color: #1f1f24 !important;
+}
+
+/* Ensure text transitions are smooth but quick */
+.text-dark, .text-secondary-2 {
+  transition: color 0.1s ease-in-out !important;
+}
