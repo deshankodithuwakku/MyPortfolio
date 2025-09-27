@@ -50,7 +50,7 @@ export default function Work() {
 															Client
 														</p>
 														<p className="mb-0 card__description text-300 fs-6 mb-0">
-															Conceptual JSC
+															XXXXXXXXXXX
 														</p>
 													</div>
 													<div className="d-md-flex content">
@@ -94,7 +94,7 @@ export default function Work() {
 															Client
 														</p>
 														<p className="mb-0 card__description text-300 fs-6 mb-0">
-															Conceptual JSC
+															XXXXXXXXXX
 														</p>
 													</div>
 													<div className="d-md-flex content">
@@ -138,7 +138,7 @@ export default function Work() {
 															Client
 														</p>
 														<p className="mb-0 card__description text-300 fs-6 mb-0">
-															Conceptual JSC
+															XXXXXXXXXXX
 														</p>
 													</div>
 													<div className="d-md-flex content">
@@ -182,7 +182,7 @@ export default function Work() {
 															Client
 														</p>
 														<p className="mb-0 card__description text-300 fs-6 mb-0">
-															Conceptual JSC
+															XXXXXXXXXXXXXXX
 														</p>
 													</div>
 													<div className="d-md-flex content">
